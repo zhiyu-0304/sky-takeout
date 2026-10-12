@@ -79,6 +79,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         shoppingCartMapper.deleteByUserId(userId);
     }
 
+    //TODO：写的太丑陋了什么时候改一下
     @Override
     public void sub(ShoppingCartDTO shoppingCartDTO) {
         Long userId = BaseContext.getCurrentId();
